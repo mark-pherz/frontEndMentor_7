@@ -1,0 +1,111 @@
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --light-gray: hsl(0, 0%, 88%);
+}
+
+@font-face {
+  font-family: 'bold';
+  src: url('./KumbhSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'regular';
+  src: url('./KumbhSans-Regular.ttf');
+}
+
+
+
+body {
+  background-color: var(--dark-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./bg-pattern-top.svg'), url('./bg-pattern-bottom.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-size: calc(200vw / 2), max(calc(200vw / 2), calc(200vh / 2));
+  background-position-x: -50vw, 50vw;
+  background-position-y: -50vw, 400px;
+ 
+
+}
+
+.card {
+  min-width: 20rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card__top {
+  height: 150px;
+  width: 100%;
+  background-image: url('./bg-pattern-card.svg');
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card__bottom {
+  position: relative;
+  text-align: center;
+}
+
+.image {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  top: -55px;
+  border-radius: 100%;
+  border: 5px solid white;
+  margin-bottom: -2rem;
+}
+
+.name {
+  font-family: 'bold'; 
+  margin-right: 0.5rem;
+}
+
+.age {
+  font-family: 'regular';
+  color: var(--dark-gray);
+}
+
+.location {
+  display: block;
+  font-family: 'regular';
+  color: var(--dark-gray);
+  margin: 0.2rem 0;
+  font-size: 0.85rem;
+}
+
+.line {
+  height: 1px;
+  border: none;
+  background-color: var(--light-gray);
+  margin-top: 1.5rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.3rem 2rem 1.8rem;
+}
+
+.stats_item {
+  text-align: center;
+}
+
+.stats_num {
+  display: block;
+  font-family: 'bold';
+  margin-bottom: 0.15rem;
+}
+
+.stats_title {
+  display: block;
+  font-family: 'regular';
+  font-size: 0.6rem;
+  color: var(--dark-gray);
+  letter-spacing: .1rem;
+}
