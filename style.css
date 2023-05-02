@@ -19,17 +19,13 @@
 
 
 body {
-  background-color: var(--dark-cyan);
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('./bg-pattern-top.svg'), url('./bg-pattern-bottom.svg');
+  background: url(./bg-pattern-top.svg), url(./bg-pattern-bottom.svg);
+  background-position: right 52vw bottom 35vh, left 48vw top 52vh;
   background-repeat: no-repeat, no-repeat;
-  background-size: calc(200vw / 2), max(calc(200vw / 2), calc(200vh / 2));
-  background-position-x: -50vw, 50vw;
-  background-position-y: -50vw, 400px;
- 
-
+  background-color: hsl(185deg, 75%, 39%);
 }
 
 .card {
